@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: floralwhite;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.logo{
+    margin-left: 100px;
+    margin-top: 20px;
+}
+.logo img{
+    width: 150px;
+    cursor: pointer;
+}
+.links ol{
+    list-style: none;
+    display: flex;
+    gap: 14px;
+}
+.links ol li{
+    cursor: pointer;
+    font-size: 16px;
+}
+.links ol li:hover{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.692);
+}
+.links{
+    margin-top: 30px;
+}
+.active{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.692);
+}
+.icons{
+    display: flex;
+    gap: 20px;
+    margin-right: 100px;
+    margin-top: 30px;
+}
+.icons img{
+    cursor: pointer;
+}
+.search{
+    width: 24px;
+    height: 24px;
+}
+.landing{
+    border: 1px solid black;
+    margin: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.image img{
+    width: 530px;
+}
+.text{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 65px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.text h3{
+    display: flex;
+    gap: 20px;
+    font-weight: 300;
+    font-size: 18px;
+}
+.text h1{
+    font-weight: 600;
+    font-size: 28px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 10px;
+}
+.text hr{
+    width: 100px;
+    height: 0;
+    margin-top: 10px;
+    background-color: black;
+}
+.shop{
+    margin-left: -105px;
+}
+
+.collections{
+    text-align: center;
+    margin-top: 50px;
+}
+.collections h1{
+    color: #333333;
+}
+.collections h1 span{
+    font-weight: 300;
+    color: #333;
+}
+.collections p{
+    color: #333;
+    font-size: 300;
+}
+.img-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px 0;
+}
+.first-row,.second-row{
+    display: flex;
+    gap: 20px;
+    margin: 0 100px;
+}
+.clothing{
+    text-align: start;
+    position: relative;
+    width: 200px;
+}
+.clothing img{
+    width: 200px;
+    cursor: pointer;
+}
+.clothing img:hover{
+    width: 198px;
+    transition: 0.3s ease-in;
+}
+.clothing h4{
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.banners{
+    margin: 80px 100px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+.exchange,.policy,.support{
+    display: block;
+    gap: 14px;
+    margin: 10px;
+}
+.exchange img,.policy img,.support img{
+    width: 30px;
+}
+.exchange h1,.policy h1,.support h1{
+    font-size: 14px;
+}
+.exchange p,.support p,.policy p{
+    font-size: 10px;
+    font-weight: 300;
+}
+
+.newsletter{
+    text-align: center;
+    margin-top: 50px;
+    padding: 10px;
+}
+.newsletter h1{
+    font-weight: 600;
+    color: #333;
+    font-family: sans-serif;
+}
+.newsletter p{
+    font-weight: 300;
+    color: #333333;
+}
+.subscribe{
+    margin-top: 30px;
+}
+.subscribe input{
+    background: transparent;
+    border: none;
+    outline: 1px solid rgba(0, 0, 0, 0.256);
+    padding: 10px 80px;
+}
+.subscribe button{
+    position: relative;
+    margin-left: -30px;
+    border: none;
+    outline: none;
+    background: black;
+    color: white;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+
+footer{
+    margin-top: 120px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+footer .align{
+    display: flex;
+    justify-content: space-between;
+}
+.info{
+    max-width: 500px;
+}
+.info img{
+    width: 120px;
+}
+.info p{
+    font-size: 14px;
+    font-weight: 300;
+    color: #333;
+}
+.redirects li,.touch li{
+    list-style: none;
+    cursor: pointer;
+    margin: 10px;
+}
+.re-links{
+    margin-top: 30px;
+}
+.redirects h2,.touch h2{
+    font-size: 18px;
+}
