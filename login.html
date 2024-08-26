@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in/ Sign up</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="log.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/assets/frontend_assets/logo.png" alt="">
+            </a>
+        </div>
+        <div class="links">
+            <ol>
+                <li class="active" onclick="defaultFn()">HOME</li>
+                <li onclick="underlineFn()" class="list">COLLECTION</li>
+                <li onclick="underlineFn2()" class="list1">ABOUT</li>
+                <li onclick="underlineFn3()" class="list2">CONTACT</li>
+            </ol>
+        </div>
+        <div class="icons">
+            <img src="images/assets/frontend_assets/search_icon.png" alt="" class="search">
+            <a href="login.html">
+                <img src="images/assets/frontend_assets/profile_icon.png" alt="" class="search">
+            </a>
+            <img src="images/assets/frontend_assets/cart_icon.png" alt="" class="search">
+        </div>
+    </nav>
+
+    <section class="form">
+        <form>
+            <div class="heading">
+                <h1 id="login-txt">Login</h1>
+            </div>
+            <div class="inputs">
+                <input type="text" placeholder="Name" class="hidden">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+            </div>
+            <div class="quiz">
+                <span id="forgot">Forgot your password?</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span onclick="pageSwitch()" id="switch">Create Account</span>
+            </div>
+            <button id="submit">Sign in</button>
+        </form>
+    </section>
+
+
+    <footer>
+        <div class="align">
+            <div class="info">
+                <img src="images/assets/frontend_assets/logo.png" alt="">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor vero molestiae libero nihil, id qui sapiente temporibus dolores incidunt totam, nostrum corporis quidem consectetur officia similique deleniti repellendus unde eos.</p>
+            </div>
+            <div class="redirects">
+                <h2>COMPANY</h2>
+                <div class="re-links">
+                    <ol>
+                        <li>Home</li>
+                        <li>About Us</li>
+                        <li>Delivery</li>
+                        <li>Privacy policy</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="touch">
+                <h2>GET IN TOUCH</h2>
+                <div class="re-links">
+                    <li>+1 567 986 512</li>
+                    <li>help@forever.com</li>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+     <script src="script.js"></script>
+    <script>
+        const active = document.querySelector(".active");
+        const list = document.querySelector(".list");
+        const list1 = document.querySelector(".list1");
+        const list2 = document.querySelector(".list2");
+
+        function underlineFn(){
+            active.classList.remove("active");
+            list.style.borderBottom = "1px solid rgba(0, 0, 0, 0.692)";
+            list1.style.borderBottom = "none";
+            list2.style.borderBottom = "none";
+        }
+        function underlineFn2(){
+            active.classList.remove("active");
+            list1.style.borderBottom = "1px solid rgba(0, 0, 0, 0.692)";
+            list.style.borderBottom = "none";
+            list2.style.borderBottom = "none";
+        }
+        function underlineFn3(){
+            active.classList.remove("active");
+            list2.style.borderBottom = "1px solid rgba(0, 0, 0, 0.692)";
+            list1.style.borderBottom = "none";
+            list.style.borderBottom = "none";
+        }
+
+
+        function defaultFn(){
+            window.location.href = "index.html";
+            active.classList.add("active");
+            list.style.borderBottom = "none";
+            list1.style.borderBottom = "none";
+            list2.style.borderBottom = "none";
+        }
+    </script>
+</body>
+</html>
