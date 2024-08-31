@@ -43,3 +43,6 @@ form button{
     padding: 10px 30px;
     margin-top: 26px;
 }
+#instructions{
+    display: none;
+}

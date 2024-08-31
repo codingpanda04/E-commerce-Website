@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log in/ Sign up</title>
+    <title>About us</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="log.css">
 </head>
 <body class="body">
     <nav>
@@ -35,23 +34,56 @@
         </div>
     </nav>
 
-    <section class="form">
-        <form>
-            <div class="heading">
-                <h1 id="login-txt">Login</h1>
+
+    <section class="about">
+        <h1><span>ABOUT</span> US</h1>
+        <div class="about-container">
+            <div class="about-img">
+                <img src="images/assets/frontend_assets/about_img.png" alt="">
             </div>
-            <div class="inputs">
-                <input type="text" placeholder="Name" class="hidden">
-                <input type="email" placeholder="Email" id="email">
-                <input type="password" placeholder="Password" id="password">
+            <div class="about-info">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis suscipit doloribus recusandae, deleniti iste corporis, sapiente sequi vel corrupti, voluptatem iusto! Deserunt culpa tempore illum provident possimus nulla! Molestiae, illo.</p><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, non! Soluta temporibus totam deserunt, maiores sed molestias quis reprehenderit quos mollitia, ut qui doloremque repudiandae saepe dolore. Maxime, quia sapiente.</p><br>
+                <h2>Our Mission</h2><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis nam excepturi laborum? Quas unde dignissimos error modi iusto sapiente quisquam animi dolor delectus excepturi, eos eius laborum praesentium recusandae totam.</p>
+
             </div>
-            <div class="quiz">
-                <span id="forgot">Forgot your password?</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <span onclick="pageSwitch()" id="switch">Create Account</span>
-            </div>
-            <button id="submit">Sign in</button>
-        </form>
+        </div>
     </section>
+
+    <section class="why">
+        <h1><span>WHY</span> CHOOSE US</h1>
+        <div class="why-col">
+            <div class="assurance">
+                <h2>Quality Assurance</h2><br>
+                <p>Why choose us is a dummy text block invented by the developer. Replace this with your own text</p>
+            </div>
+            <div class="assurance">
+                <h2>Convenience</h2><br>
+                <p>Why choose us is a dummy text block invented by the developer. Replace this with your own text</p>
+                <hr>
+            </div>
+
+    
+            <div class="assurance">
+                <h2>Exceptional Customer Service</h2><br>
+                <p>Why choose us is a dummy text block invented by the developer. Replace this with your own text</p>
+                <hr>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="newsletter">
+        <h1>Subscribe now & get 20% off</h1><br>
+        <p>Lorem ipsum gats defut pres continua aluta de facto de statio comusto</p>
+        <div class="subscribe">
+            <input type="email" placeholder="Enter your email">
+            <button>Subscribe</button>
+        </div>
+    </section>
+
 
 
     <footer>
@@ -82,7 +114,19 @@
     </footer>
 
 
-     <script src="script.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
     <script>
         const active = document.querySelector(".active");
         const list = document.querySelector(".list");
@@ -90,22 +134,22 @@
         const list2 = document.querySelector(".list2");
 
         function underlineFn(){
-            window.location.href = "collection.html";
             active.classList.remove("active");
+            window.location.href = "collection.html";
             list.style.borderBottom = "1px solid rgba(0, 0, 0, 0.692)";
             list1.style.borderBottom = "none";
             list2.style.borderBottom = "none";
         }
         function underlineFn2(){
-            window.location.href = "about.html";
             active.classList.remove("active");
+            window.location.href = "about.html";
             list1.style.borderBottom = "1px solid rgba(0, 0, 0, 0.692)";
             list.style.borderBottom = "none";
             list2.style.borderBottom = "none";
         }
         function underlineFn3(){
-            window.location.href = "contact.html";
             active.classList.remove("active");
+            window.location.href = "contact.html";
             list2.style.borderBottom = "1px solid rgba(0, 0, 0, 0.692)";
             list1.style.borderBottom = "none";
             list.style.borderBottom = "none";
@@ -120,5 +164,6 @@
             list2.style.borderBottom = "none";
         }
     </script>
+    <script src="script.js"></script>
 </body>
 </html>

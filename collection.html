@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    <nav>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/assets/frontend_assets/logo.png" alt="">
+            </a>
+        </div>
+        <div class="links">
+            <ol>
+                <li class="active" onclick="defaultFn()">HOME</li>
+                <li onclick="underlineFn()" class="list">COLLECTION</li>
+                <li onclick="underlineFn2()" class="list1">ABOUT</li>
+                <li onclick="underlineFn3()" class="list2">CONTACT</li>
+            </ol>
+        </div>
+        <!--<div class="modes">
+            <li id="dark">Dark Mode</li>
+            <input type="range" id="switch-btn" onclick="switchDarkMode()">
+        </div>-->
+        <div class="icons">
+            <img src="images/assets/frontend_assets/search_icon.png" alt="" class="search">
+            <a href="login.html">
+                <img src="images/assets/frontend_assets/profile_icon.png" alt="" class="search">
+            </a>
+            <img src="images/assets/frontend_assets/cart_icon.png" alt="" class="search">
+        </div>
+    </nav>
+
+    <section class="collection">
+        <div class="search-box">
+            <input  id="search" type="search" placeholder="Search items" value="gucci">
+            <img src="images/assets/frontend_assets/cross_icon.png" onclick="hideBox()">
+        </div>
+        <div class="col-titles">
+            <h3>FILTERS</h3>
+            <div class="col-container">
+                <h1><span>ALL</span> COLLECTIONS</h1>
+                <select>
+                    <option>SORT BY NEWEST</option>
+                    <option>SORT BY LOW TO HIGH</option>
+                    <option>SORT BY HIGH TO LOW</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <section class="filters">
+        <div class="fil-container">
+            <div class="categories">
+                <div class="categ1">
+                    <h3>CATEGORIES</h3>
+                    <div class="filter">
+                        <input type="checkbox">
+                        <h5>Men</h5>
+                    </div>
+                    <div class="filter">
+                        <input type="checkbox">
+                        <h5>Women</h5>
+                    </div>
+                    <div class="filter">
+                        <input type="checkbox">
+                        <h5>Kids</h5>
+                    </div>
+                </div>
+                <div class="categ1">
+                    <h3>TYPE</h3>
+                    <div class="filter">
+                        <input type="checkbox">
+                        <h5>Topwear</h5>
+                    </div>
+                    <div class="filter">
+                        <input type="checkbox">
+                        <h5>Bottonwear</h5>
+                    </div>
+                    <div class="filter">
+                        <input type="checkbox">
+                        <h5>Winterwear</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="filters-img">
+                <div class="all-imgs">
+                    <div class="images-container">
+                    <div class="product men">
+                        <img src="images/assets/frontend_assets/p_img2.png" alt="">
+                        <div class="details">
+                            <h4>Men Round Neck Pure Cotton T-Shirt</h4>
+                            <span>$80</span>
+                        </div>
+                    </div>
+                    <div class="product men">
+                        <img src="images/assets/frontend_assets/p_img10.png" alt="">
+                        <div class="details">
+                            <h4>Men Round Neck Pure Cotton T-Shirt</h4>
+                            <span>$80</span>
+                        </div>
+                    </div>
+                    <div class="product women">
+                        <img src="images/assets/frontend_assets/p_img5.png" alt="">
+                        <div class="details">
+                            <h4>Men Round Neck Pure Cotton T-Shirt</h4>
+                            <span>$80</span>
+                        </div>
+                    </div>
+                    <div class="product women">
+                        <img src="images/assets/frontend_assets/p_img5.png" alt="">
+                        <div class="details">
+                            <h4>Men Round Neck Pure Cotton T-Shirt</h4>
+                            <span>$80</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="images-container">
+                    <div class="product men">
+                        <img src="images/assets/frontend_assets/p_img7.png" alt="">
+                        <div class="details">
+                            <h4>Men Round Neck Pure Cotton T-Shirt</h4>
+                            <span>$80</span>
+                        </div>
+                    </div>
+                    <div class="product kids">
+                        <img src="images/assets/frontend_assets/p_img49.png" alt="">
+                        <div class="details">
+                            <h4>Men Round Neck Pure Cotton T-Shirt</h4>
+                            <span>$80</span>
+                        </div>
+                    </div>
+                    <div class="product kids">
+                        <img src="images/assets/frontend_assets/p_img23.png" alt="">
+                        <div class="details">
+                            <h4>Men Round Neck Pure Cotton T-Shirt</h4>
+                            <span>$80</span>
+                        </div>
+                    </div>
+                    <div class="product men">
+                        <img src="images/assets/frontend_assets/p_img45.png" alt="">
+                        <div class="details">
+                            <h4>Men Round Neck Pure Cotton T-Shirt</h4>
+                            <span>$80</span>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="images-container">
+                        <div class="product men">
+                            <img src="images/assets/frontend_assets/p_img40.png" alt="">
+                            <div class="details">
+                                <h4>Men Round Neck Pure Cotton T-Shirt</h4>
+                                <span>$80</span>
+                            </div>
+                        </div>
+                        <div class="product men">
+                            <img src="images/assets/frontend_assets/p_img41.png" alt="">
+                            <div class="details">
+                                <h4>Men Round Neck Pure Cotton T-Shirt</h4>
+                                <span>$80</span>
+                            </div>
+                        </div>
+                        <div class="product kids">
+                            <img src="images/assets/frontend_assets/p_img42.png" alt="">
+                            <div class="details">
+                                <h4>Men Round Neck Pure Cotton T-Shirt</h4>
+                                <span>$80</span>
+                            </div>
+                        </div>
+                        <div class="product kids">
+                            <img src="images/assets/frontend_assets/p_img43.png" alt="">
+                            <div class="details">
+                                <h4>Men Round Neck Pure Cotton T-Shirt</h4>
+                                <span>$80</span>
+                            </div>
+                        </div>
+                </div>
+                <div class="images-container">
+                    <div class="product kids">
+                        <img src="images/assets/frontend_assets/p_img47.png" alt="">
+                        <div class="details">
+                            <h4>Men Round Neck Pure Cotton T-Shirt</h4>
+                            <span>$80</span>
+                        </div>
+                    </div>
+                    <div class="product men">
+                        <img src="images/assets/frontend_assets/p_img48.png" alt="">
+                        <div class="details">
+                            <h4>Men Round Neck Pure Cotton T-Shirt</h4>
+                            <span>$80</span>
+                        </div>
+                    </div>
+                    <div class="product kids">
+                        <img src="images/assets/frontend_assets/p_img49.png" alt="">
+                        <div class="details">
+                            <h4>Men Round Neck Pure Cotton T-Shirt</h4>
+                            <span>$80</span>
+                        </div>
+                    </div>
+                    <div class="product kids">
+                        <img src="images/assets/frontend_assets/p_img50.png" alt="">
+                        <div class="details">
+                            <h4>Men Round Neck Pure Cotton T-Shirt</h4>
+                            <span>$80</span>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="images-container">
+                        <div class="product kids">
+                            <img src="images/assets/frontend_assets/p_img27.png" alt="">
+                            <div class="details">
+                                <h4>Men Round Neck Pure Cotton T-Shirt</h4>
+                                <span>$80</span>
+                            </div>
+                        </div>
+                        <div class="product men">
+                            <img src="images/assets/frontend_assets/p_img28.png" alt="">
+                            <div class="details">
+                                <h4>Men Round Neck Pure Cotton T-Shirt</h4>
+                                <span>$80</span>
+                            </div>
+                        </div>
+                        <div class="product women">
+                            <img src="images/assets/frontend_assets/p_img29.png" alt="">
+                            <div class="details">
+                                <h4>Men Round Neck Pure Cotton T-Shirt</h4>
+                                <span>$80</span>
+                            </div>
+                        </div>
+                        <div class="product kids">
+                            <img src="images/assets/frontend_assets/p_img30.png" alt="">
+                            <div class="details">
+                                <h4>Men Round Neck Pure Cotton T-Shirt</h4>
+                                <span>$80</span>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="images-container">
+                            <div class="product men">
+                                <img src="images/assets/frontend_assets/p_img31.png" alt="">
+                                <div class="details">
+                                    <h4>Men Round Neck Pure Cotton T-Shirt</h4>
+                                    <span>$80</span>
+                                </div>
+                            </div>
+                            <div class="product men">
+                                <img src="images/assets/frontend_assets/p_img32.png" alt="">
+                                <div class="details">
+                                    <h4>Men Round Neck Pure Cotton T-Shirt</h4>
+                                    <span>$80</span>
+                                </div>
+                            </div>
+                            <div class="product kids">
+                                <img src="images/assets/frontend_assets/p_img33.png" alt="">
+                                <div class="details">
+                                    <h4>Men Round Neck Pure Cotton T-Shirt</h4>
+                                    <span>$80</span>
+                                </div>
+                            </div>
+                            <div class="product women">
+                                <img src="images/assets/frontend_assets/p_img34.png" alt="">
+                                <div class="details">
+                                    <h4>Men Round Neck Pure Cotton T-Shirt</h4>
+                                    <span>$80</span>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="images-container">
+                                <div class="product women">
+                                    <img src="images/assets/frontend_assets/p_img35.png" alt="">
+                                    <div class="details">
+                                        <h4>Men Round Neck Pure Cotton T-Shirt</h4>
+                                        <span>$80</span>
+                                    </div>
+                                </div>
+                                <div class="product women">
+                                    <img src="images/assets/frontend_assets/p_img36.png" alt="">
+                                    <div class="details">
+                                        <h4>Men Round Neck Pure Cotton T-Shirt</h4>
+                                        <span>$80</span>
+                                    </div>
+                                </div>
+                                <div class="product women">
+                                    <img src="images/assets/frontend_assets/p_img37.png" alt="">
+                                    <div class="details">
+                                        <h4>Men Round Neck Pure Cotton T-Shirt</h4>
+                                        <span>$80</span>
+                                    </div>
+                                </div>
+                                <div class="product kids">
+                                    <img src="images/assets/frontend_assets/p_img38.png" alt="">
+                                    <div class="details">
+                                        <h4>Men Round Neck Pure Cotton T-Shirt</h4>
+                                        <span>$80</span>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="images-container">
+                                    <div class="product men">
+                                        <img src="images/assets/frontend_assets/p_img39.png" alt="">
+                                        <div class="details">
+                                            <h4>Men Round Neck Pure Cotton T-Shirt</h4>
+                                            <span>$80</span>
+                                        </div>
+                                    </div>
+                                    <div class="product women">
+                                        <img src="images/assets/frontend_assets/p_img1.png" alt="">
+                                        <div class="details">
+                                            <h4>Men Round Neck Pure Cotton T-Shirt</h4>
+                                            <span>$80</span>
+                                        </div>
+                                    </div>
+                                    <div class="product kids">
+                                        <img src="images/assets/frontend_assets/p_img3.png" alt="">
+                                        <div class="details">
+                                            <h4>Men Round Neck Pure Cotton T-Shirt</h4>
+                                            <span>$80</span>
+                                        </div>
+                                    </div>
+                                    <div class="product kids">
+                                        <img src="images/assets/frontend_assets/p_img6.png" alt="">
+                                        <div class="details">
+                                            <h4>Men Round Neck Pure Cotton T-Shirt</h4>
+                                            <span>$80</span>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="images-container">
+                                        <div class="product men">
+                                            <img src="images/assets/frontend_assets/p_img8.png" alt="">
+                                            <div class="details">
+                                                <h4>Men Round Neck Pure Cotton T-Shirt</h4>
+                                                <span>$80</span>
+                                            </div>
+                                        </div>
+                                        <div class="product kids">
+                                            <img src="images/assets/frontend_assets/p_img9.png" alt="">
+                                            <div class="details">
+                                                <h4>Men Round Neck Pure Cotton T-Shirt</h4>
+                                                <span>$80</span>
+                                            </div>
+                                        </div>
+                                        <div class="product men">
+                                            <img src="images/assets/frontend_assets/p_img11.png" alt="">
+                                            <div class="details">
+                                                <h4>Men Round Neck Pure Cotton T-Shirt</h4>
+                                                <span>$80</span>
+                                            </div>
+                                        </div>
+                                        <div class="product men">
+                                            <img src="images/assets/frontend_assets/p_img12.png" alt="">
+                                            <div class="details">
+                                                <h4>Men Round Neck Pure Cotton T-Shirt</h4>
+                                                <span>$80</span>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div class="images-container">
+                                            <div class="product women">
+                                                <img src="images/assets/frontend_assets/p_img13.png" alt="">
+                                                <div class="details">
+                                                    <h4>Men Round Neck Pure Cotton T-Shirt</h4>
+                                                    <span>$80</span>
+                                                </div>
+                                            </div>
+                                            <div class="product kids">
+                                                <img src="images/assets/frontend_assets/p_img16.png" alt="">
+                                                <div class="details">
+                                                    <h4>Men Round Neck Pure Cotton T-Shirt</h4>
+                                                    <span>$80</span>
+                                                </div>
+                                            </div>
+                                            <div class="product women">
+                                                <img src="images/assets/frontend_assets/p_img21.png" alt="">
+                                                <div class="details">
+                                                    <h4>Men Round Neck Pure Cotton T-Shirt</h4>
+                                                    <span>$80</span>
+                                                </div>
+                                            </div>
+                                            <div class="product  women">
+                                                <img src="images/assets/frontend_assets/p_img22.png" alt="">
+                                                <div class="details">
+                                                    <h4>Men Round Neck Pure Cotton T-Shirt</h4>
+                                                    <span>$80</span>
+                                                </div>
+                                            </div>
+                                            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <footer>
+        <div class="align">
+            <div class="info">
+                <img src="images/assets/frontend_assets/logo.png" alt="">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor vero molestiae libero nihil, id qui sapiente temporibus dolores incidunt totam, nostrum corporis quidem consectetur officia similique deleniti repellendus unde eos.</p>
+            </div>
+            <div class="redirects">
+                <h2>COMPANY</h2>
+                <div class="re-links">
+                    <ol>
+                        <li>Home</li>
+                        <li>About Us</li>
+                        <li>Delivery</li>
+                        <li>Privacy policy</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="touch">
+                <h2>GET IN TOUCH</h2>
+                <div class="re-links">
+                    <li>+1 567 986 512</li>
+                    <li>help@forever.com</li>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        const active = document.querySelector(".active");
+        const list = document.querySelector(".list");
+        const list1 = document.querySelector(".list1");
+        const list2 = document.querySelector(".list2");
+
+        function underlineFn(){
+            active.classList.remove("active");
+            window.location.href = "collection.html";
+            list.style.borderBottom = "1px solid rgba(0, 0, 0, 0.692)";
+            list1.style.borderBottom = "none";
+            list2.style.borderBottom = "none";
+        }
+        function underlineFn2(){
+            active.classList.remove("active");
+            window.location.href = "about.html";
+            list1.style.borderBottom = "1px solid rgba(0, 0, 0, 0.692)";
+            list.style.borderBottom = "none";
+            list2.style.borderBottom = "none";
+        }
+        function underlineFn3(){
+            active.classList.remove("active");
+            window.location.href = "contact.html";
+            list2.style.borderBottom = "1px solid rgba(0, 0, 0, 0.692)";
+            list1.style.borderBottom = "none";
+            list.style.borderBottom = "none";
+        }
+
+
+        function defaultFn(){
+            window.location.href = "index.html";
+            active.classList.add("active");
+            list.style.borderBottom = "none";
+            list1.style.borderBottom = "none";
+            list2.style.borderBottom = "none";
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

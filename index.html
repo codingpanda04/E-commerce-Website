@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Forever</title>
 </head>
-<body>
+<body class="body">
     <nav>
         <div class="logo">
             <a href="index.html">
@@ -22,6 +22,10 @@
                 <li onclick="underlineFn3()" class="list2">CONTACT</li>
             </ol>
         </div>
+        <!--<div class="modes">
+            <li id="dark">Dark Mode</li>
+            <input type="range" id="switch-btn" onclick="switchDarkMode()">
+        </div>-->
         <div class="icons">
             <img src="images/assets/frontend_assets/search_icon.png" alt="" class="search">
             <a href="login.html">
@@ -47,8 +51,8 @@
         <div class="img-container">
             <div class="first-row">
                 <div class="clothing">
-                    <img src="images/assets/frontend_assets/p_img2.png" alt="">
-                    <h4>Men Round Neck Pure Cotton T-Shirt</h4>
+                    <img src="images/assets/frontend_assets/p_img2.png" alt="" onclick="displayCloth()">
+                    <h4 id="description">Men Round Neck Pure Cotton T-Shirt</h4>
                     <span>$80</span>
                 </div>
                 <div class="clothing">
@@ -223,8 +227,12 @@
 
 
 
-
-
+   <script>
+    function displayCloth(){
+        window.location.href = "product.html";
+        const productDescription = document.getElementById("description");
+    }
+   </script>
     <script>
         const active = document.querySelector(".active");
         const list = document.querySelector(".list");
@@ -233,18 +241,21 @@
 
         function underlineFn(){
             active.classList.remove("active");
+            window.location.href = "collection.html";
             list.style.borderBottom = "1px solid rgba(0, 0, 0, 0.692)";
             list1.style.borderBottom = "none";
             list2.style.borderBottom = "none";
         }
         function underlineFn2(){
             active.classList.remove("active");
+            window.location.href = "about.html";
             list1.style.borderBottom = "1px solid rgba(0, 0, 0, 0.692)";
             list.style.borderBottom = "none";
             list2.style.borderBottom = "none";
         }
         function underlineFn3(){
             active.classList.remove("active");
+            window.location.href = "contact.html";
             list2.style.borderBottom = "1px solid rgba(0, 0, 0, 0.692)";
             list1.style.borderBottom = "none";
             list.style.borderBottom = "none";
@@ -259,5 +270,6 @@
             list2.style.borderBottom = "none";
         }
     </script>
+    <script src="script.js"></script>
 </body>
 </html>
