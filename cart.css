@@ -1,0 +1,41 @@
+.cart{
+    border: 1px solid black;
+    margin: 50px 100px;
+    padding: 50px 0;
+}
+.product-in-cart{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 30px;
+    text-align: center;
+    border: 1px solid black;
+    padding: 20px 0;
+}
+.product-image{
+    margin-left: 20px;
+}
+.product-image img{
+    width: 60px;
+}
+.action{
+    margin-right: 30px;
+}
+.action button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: blue;
+    color: white;
+    padding: 10px 30px;
+}
+.quantity{
+    display: flex;
+    gap: 20px;
+}
+#increase,#decrease{
+    cursor: pointer;
+    background: transparent;
+}

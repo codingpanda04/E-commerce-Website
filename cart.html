@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log in/ Sign up</title>
+    <link rel="shortcut icon" href="images/assets/frontend_assets/logo.png" type="image/x-icon">
+    <title>Cart</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="log.css">
+    <link rel="stylesheet" href="cart.css">
 </head>
-<body class="body">
+<body>
     <nav>
         <div class="logo">
             <a href="index.html">
@@ -37,54 +38,139 @@
         </div>
     </nav>
 
-    <section class="form">
-        <form>
-            <div class="heading">
-                <h1 id="login-txt">Login</h1>
-            </div>
-            <div class="inputs">
-                <input type="text" placeholder="Name" class="hidden">
-                <input type="email" placeholder="Email" id="email">
-                <input type="password" placeholder="Password" id="password">
-            </div>
-            <div class="quiz">
-                <span id="forgot">Forgot your password?</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <span onclick="pageSwitch()" id="switch">Create Account</span>
-            </div>
-            <button id="submit">Sign in</button>
-        </form>
-    </section>
 
-
-    <footer>
-        <div class="align">
-            <div class="info">
-                <img src="images/assets/frontend_assets/logo.png" alt="">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor vero molestiae libero nihil, id qui sapiente temporibus dolores incidunt totam, nostrum corporis quidem consectetur officia similique deleniti repellendus unde eos.</p>
-            </div>
-            <div class="redirects">
-                <h2>COMPANY</h2>
-                <div class="re-links">
-                    <ol>
-                        <li>Home</li>
-                        <li>About Us</li>
-                        <li>Delivery</li>
-                        <li>Privacy policy</li>
-                    </ol>
+    <section class="cart">
+        <div class="items">
+            <div class="product-in-cart">
+                <div class="product-image">
+                    <img src="images/assets/frontend_assets/p_img1.png" alt="">
+                </div>
+                <div class="product-text">
+                    <h4>Women's Top Wear (Blouse)</h4>
+                    <p>From the best seller collections</p>
+                </div>
+                <div class="quantity">
+                    <p id="decrease" onclick="decreaseQuant()">-</p>
+                    <p id="quantity">1</p>
+                    <p id="increase" onclick="increaseQuant()">+</p>
+                </div>
+                <div class="action">
+                    <button onclick="clearCart()">Remove</button>
                 </div>
             </div>
-            <div class="touch">
-                <h2>GET IN TOUCH</h2>
-                <div class="re-links">
-                    <li>+1 567 986 512</li>
-                    <li>help@forever.com</li>
+            <div class="product-in-cart">
+                <div class="product-image">
+                    <img src="images/assets/frontend_assets/p_img1.png" alt="">
+                </div>
+                <div class="product-text">
+                    <h4>Women's Top Wear (Blouse)</h4>
+                    <p>From the best seller collections</p>
+                </div>
+                <div class="quantity">
+                    <p id="decrease" onclick="decreaseQuant()">-</p>
+                    <p id="quantity">1</p>
+                    <p id="increase" onclick="increaseQuant()">+</p>
+                </div>
+                <div class="action">
+                    <button onclick="clearCart()">Remove</button>
+                </div>
+            </div>
+            <div class="product-in-cart">
+                <div class="product-image">
+                    <img src="images/assets/frontend_assets/p_img1.png" alt="">
+                </div>
+                <div class="product-text">
+                    <h4>Women's Top Wear (Blouse)</h4>
+                    <p>From the best seller collections</p>
+                </div>
+                <div class="quantity">
+                    <p id="decrease" onclick="decreaseQuant()">-</p>
+                    <p id="quantity">1</p>
+                    <p id="increase" onclick="increaseQuant()">+</p>
+                </div>
+                <div class="action">
+                    <button onclick="clearCart()">Remove</button>
                 </div>
             </div>
         </div>
-    </footer>
+    </section>
 
 
-     <script src="script.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
     <script>
         const active = document.querySelector(".active");
         const list = document.querySelector(".list");
@@ -92,22 +178,22 @@
         const list2 = document.querySelector(".list2");
 
         function underlineFn(){
-            window.location.href = "collection.html";
             active.classList.remove("active");
+            window.location.href = "collection.html";
             list.style.borderBottom = "1px solid rgba(0, 0, 0, 0.692)";
             list1.style.borderBottom = "none";
             list2.style.borderBottom = "none";
         }
         function underlineFn2(){
-            window.location.href = "about.html";
             active.classList.remove("active");
+            window.location.href = "about.html";
             list1.style.borderBottom = "1px solid rgba(0, 0, 0, 0.692)";
             list.style.borderBottom = "none";
             list2.style.borderBottom = "none";
         }
         function underlineFn3(){
-            window.location.href = "contact.html";
             active.classList.remove("active");
+            window.location.href = "contact.html";
             list2.style.borderBottom = "1px solid rgba(0, 0, 0, 0.692)";
             list1.style.borderBottom = "none";
             list.style.borderBottom = "none";
@@ -122,5 +208,6 @@
             list2.style.borderBottom = "none";
         }
     </script>
+    <script src="script.js"></script>
 </body>
 </html>

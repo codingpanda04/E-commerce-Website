@@ -96,3 +96,21 @@ searchInput.addEventListener("mouseover", ()=>{
     searchInput.value = "Louis vuton";
 })
     
+
+
+
+
+function increaseQuant(){
+    const quantity = document.getElementById("quantity");
+    quantity.innerText ++;
+}
+
+function decreaseQuant(){
+    const quantity = document.getElementById("quantity");
+    quantity.innerText --;
+}
+
+function clearCart(){
+    const productInCart = document.querySelector(".product-in-cart");
+    productInCart.style.display = "none";
+}
